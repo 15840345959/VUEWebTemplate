@@ -13,11 +13,21 @@
   box-sizing: border-box;
 }
 
+.flex-row-inline{
+  @extend .flex-row;
+  display: inline-flex;
+}
+
 .flex-column{
   height: 100%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+}
+
+.flex-column-inline{
+  @extend .flex-column;
+  display: inline-flex;
 }
 
 .flex-center{

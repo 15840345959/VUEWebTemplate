@@ -1,18 +1,19 @@
 // 请求器实例，挂载于window._request
 import axios from 'axios'
 import qs from 'qs'
+import { prodApi } from '../../my-config'
 
 var config = {
   timeout: 7000,
   headers: {
-    'Content-Type': 'application/x-www-form-urlencoded'
+    'Content-Type': 'application/x-www-form-urlencoded',
   },
 
   transformRequest: qs.stringify
 }
 
 var axiosInstance = axios.create({
-  baseURL: '/api',
+  baseURL: process.env.NODE_ENV === 'production' ? prodApi : '/api',
   ...config
 })
 
@@ -21,8 +22,7 @@ axiosInstance.interceptors.response.use(responseDataHandler)
 
 // 请求拦截器
 function requestDataHandler(req){
-  const token = localStorage.getItem('token')
-  if(token) req.headers.Authorization = 'Bear ' + token
+
   return req
 }
 
