@@ -16,7 +16,7 @@ const apiList = [
   get('getIndexData', 'index/home'),
 
   // 调用该接口时，将显示loading，并在返回的result字段为false或调用接口失败时，提示对应信息
-  get('getIndexData2', 'index/home', { loading: true, msg: true }),
+  get('getIndexData2', 'index/home', { loading: '加载中', msg: true }),
 
   // 调用该接口时，将显示loading并在下方显示文字“加载中”，并在result为false时，显示“加载首页信息失败”的提示
   post('getIndexData3', 'index/home', { loading: '加载中', msg: '加载首页信息失败' }),

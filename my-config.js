@@ -1,5 +1,5 @@
 module.exports = {
-  // 打包后是否显示log
+  // 打包后是否隐藏log
   dropConsole: true,
 
   // 开发环境api地址

@@ -26,6 +26,11 @@ const routes = [
     path: '/',
     name: 'index',
     component: Index,
+    meta: {
+      login: true
+    }
+  }, {
+  
   }
 ]
 
