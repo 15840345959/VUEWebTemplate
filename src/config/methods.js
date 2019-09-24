@@ -16,3 +16,4 @@ Vue.prototype.$baseToView = function(name, options = {}){
 Vue.prototype.$deepToView = function(name, options = {}){
   this.$router.push({ name: this.$route.name + '/' + name, ...options })
 }
+
