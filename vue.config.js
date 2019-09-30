@@ -9,6 +9,8 @@ for(let key in pathAlias){
   pathAlias[key] = resolve(pathAlias[key])
 }
 
+const isProduction = process.env.NODE_ENV === 'production'
+
 module.exports = {
   productionSourceMap: false,
   devServer: {
@@ -54,11 +56,10 @@ module.exports = {
         })
       )
     }
-  },
 
-  configureWebpack: {
-    resolve: {
-      alias: pathAlias
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      ...pathAlias
     }
   },
 
