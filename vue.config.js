@@ -1,4 +1,5 @@
 const path = require('path')
+const UglifyJsPlugin = require('uglify-js-plugin')
 const {pathAlias, dropConsole, devApi} = require('./my-config')
 
 function resolve(dir){
