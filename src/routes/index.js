@@ -26,9 +26,10 @@ const routes = [
     path: '/',
     name: 'index',
     component: Index,
-    meta: {
-      login: true
-    }
+    meta: { keepAlive }         // 设置路由缓存
+  }, {
+    ...p('my'),     // 这个就相当于同时设置 path: '/my', name: 'my'
+    component: () => import('@v/my/Index')      // 路由懒加载
   }
 ]
 

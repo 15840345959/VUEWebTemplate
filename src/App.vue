@@ -20,9 +20,6 @@ export default {
     }
   },
 
-  mounted (){
-    _api.getIndexData2()
-  }
 }
 </script>
 
