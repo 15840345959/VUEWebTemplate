@@ -29,8 +29,6 @@ const routes = [
     meta: {
       login: true
     }
-  }, {
-  
   }
 ]
 

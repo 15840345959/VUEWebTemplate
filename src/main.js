@@ -5,7 +5,6 @@ import App from './App.vue'
 import router from './routes'
 import store from './store/index'
 
-import beforeInit from './config/beforeInit'
 import beforeCreate from './config/beforeCreate'
 import created from './config/created'
 import themeColors from './styles/global.scss'
