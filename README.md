@@ -4,6 +4,8 @@
 
 该模板使用了[element-ui](https://element.eleme.cn/#/)作为UI框架。
 
+> 注意：该模板中使用了node-sass，在没有翻墙的情况下安装依赖包时，经常会导致安装失败，可以直接使用压缩包
+
 ## 配置
 
 请查看：./my-config.js

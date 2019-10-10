@@ -1,11 +1,11 @@
 <template>
   <div>
-    hello world
+  
   </div>
 </template>
 
 <script>
-
+import Test from '@c/Test.vue'
 export default {
 
   data (){
@@ -18,4 +18,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 </style>

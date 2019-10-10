@@ -24,9 +24,9 @@ require('./config/directives')
 require('./config/filters')
 require('./config/api')
 
-beforeInit(() => new Vue({
+new Vue({
   router,
   store,
   beforeCreate, created,
   render: h => h(App)
-}).$mount('#app'))
+}).$mount('#app')

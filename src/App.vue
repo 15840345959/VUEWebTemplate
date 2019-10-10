@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import Test from '@c/Test'
+
 export default {
   data (){
     return {
